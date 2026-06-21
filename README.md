@@ -340,6 +340,10 @@ p10k configure
 
 Choose the style you prefer. If icons look broken, re-check your Nerd Font installation and terminal font setting.
 
+> [!IMPORTANT]
+> `p10k configure` is an interactive, user-specific final step.
+> If an automated agent performs the setup, it can install and verify the theme, but the user should still run `p10k configure` at the end to choose the prompt style and generate the final `~/.p10k.zsh` configuration.
+
 ## Verify Installation
 
 Run these commands in the same shell where Zsh is installed:
@@ -433,7 +437,9 @@ Use this checklist if an automated agent or script is following this guide.
 
 8. Keep `zsh-syntax-highlighting` last in the plugin list.
 9. Verify installation with the commands in the [Verify Installation](#verify-installation) section.
-10. Run:
+10. Hand off the final interactive Powerlevel10k configuration to the user.
+    - Do not claim the prompt appearance is fully configured until `p10k configure` has been run.
+    - If the agent cannot complete interactive prompts for the user, clearly report that installation is complete and the remaining user action is:
 
     ```bash
     p10k configure
