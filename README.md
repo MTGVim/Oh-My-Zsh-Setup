@@ -1,6 +1,6 @@
 # Make Your WSL OR WSL2 Terminal AWESOME - With Windows Terminal , ZSH , Oh-My-Zsh And Powerlevel10k
 
-![Titile Image](ohmyposh.png)
+![Titile Image](ohmyzsh.png)
 
 # Prerequisites
 
@@ -85,7 +85,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.
 To enable the auto-suggestion and syntax-highlighting plugins or any other plugins in home directory, edit your `~/.zshrc` file. 
 
 ```bash
-vi .zshrc
+vi ~/.zshrc
 
 ```
 Simply change the default line `plugins=(git)` to `plugins=(git sudo <optional-other-plugins>)`.
