@@ -327,8 +327,8 @@ source ~/.zshrc
 ```
 
 > [!NOTE]
-> Because this guide enables the Oh My Zsh `fzf` plugin, you usually do not need to add `source <(fzf --zsh)` manually.
-> If you do not use the Oh My Zsh `fzf` plugin, you can use fzf's native shell integration instead.
+> This guide uses the Oh My Zsh `fzf` plugin, so do not add separate fzf shell-integration lines to this setup.
+> Keep plugin loading centralized in the `plugins=(...)` list to avoid duplicate or conflicting shell hooks.
 
 ## Configure Powerlevel10k
 
